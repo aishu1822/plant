@@ -43,6 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget plantCardWidget(String name, int idx) {
     return Card(
+              elevation: 3,              
               child:
                 Container(
                   padding: EdgeInsets.all(10),
@@ -145,13 +146,16 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            plantCardWidget("plant name 1", 0),
-            plantCardWidget("plant name 2", 1),                
-          ],
-        ),
+        child:
+          Center(child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              plantCardWidget("plant name 1", 0),
+              plantCardWidget("plant name 2", 1),                
+            ],
+          ),
+        )
       ),
     );
   }
