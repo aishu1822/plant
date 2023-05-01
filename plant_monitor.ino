@@ -87,7 +87,6 @@ void loop() {
 
 
 // Allows the user to manually run the motor
-// TODO: consider adding a time that the user wants it to run for
 int runMotor(String plantStr) {
     int plantNum = plantStr.toInt();
     digitalWrite(plants[plantNum].motorPin, HIGH);
@@ -124,9 +123,3 @@ int setDrySoil(String input) {
     
     return plants[plantNum].threshold;
 }
-
-/*TODOLIST
-- finalizing the setup
-- testing the thresholds for soil
-- maybe think about 3d printing?? 
-*/
