@@ -96,46 +96,6 @@ int runMotor(String plantStr) {
     return 0;
 }
 
-/* int changeThreshold(String input) {
-    char plantStr = input[0];
-    int plantNum = plantStr - '0';
-    
-    Serial.println(input);
-    
-    bool low = false;
-    low = input.length() > input.replace(String("low"), String("")).length();
-    bool med = false;
-    med = input.length() > input.replace(String("med"), String("")).length();
-    bool high = false; 
-    high = input.length() > input.replace(String("high"), String("")).length();
-
-    if (low) {
-        plants[plantNum].threshold = LOW;
-        Serial.println("Setting to Low");Serial.print("New threshold for plant ");
-        Serial.print(plantNum);
-        Serial.print(" is: ");
-        Serial.println(plants[plantNum].threshold);
-    }
-    if (med) {
-        plants[plantNum].threshold = MED;
-        Serial.println("Setting to Medium");
-        Serial.print("New threshold for plant ");
-        Serial.print(plantNum);
-        Serial.print(" is: ");
-        Serial.println(plants[plantNum].threshold);
-    }
-    if (high) {
-        plants[plantNum].threshold = HIGH;
-        Serial.print("New threshold for plant ");
-        Serial.print(plantNum);
-        Serial.print(" is: ");
-        Serial.println(plants[plantNum].threshold);
-    }
-    
-    return 0;
-}
-*/
-
 int setDrySoil(String input) {
     char plantStr = input[0];
     int plantNum = plantStr - '0';
